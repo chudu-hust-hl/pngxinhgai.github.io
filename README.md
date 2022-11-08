@@ -4,13 +4,15 @@
 
 <HEAD>
   <TITLE> Heart </TITLE>
- 
-
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
 
   <style>
     html,
     body {
-      height: 200%;
+      height: 100%;
       padding: 0;
       margin: 0;
       background: #000;
@@ -21,7 +23,7 @@
     }
 
     .box {
-      width: 200%;
+      width: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
