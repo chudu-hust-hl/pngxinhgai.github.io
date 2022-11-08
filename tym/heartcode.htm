@@ -1,0 +1,751 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:16.0pt;
+	font-family:"Times New Roman",serif;}
+.MsoChpDefault
+	{font-size:16.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:42.55pt 2.0cm 42.55pt 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;HTML&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;HEAD&gt;</p>
+
+<p class=MsoNormal>  &lt;TITLE&gt; Heart &lt;/TITLE&gt;</p>
+
+<p class=MsoNormal>  &lt;META NAME=&quot;Generator&quot;
+CONTENT=&quot;EditPlus&quot;&gt;</p>
+
+<p class=MsoNormal>  &lt;META NAME=&quot;Author&quot; CONTENT=&quot;&quot;&gt;</p>
+
+<p class=MsoNormal>  &lt;META NAME=&quot;Keywords&quot;
+CONTENT=&quot;&quot;&gt;</p>
+
+<p class=MsoNormal>  &lt;META NAME=&quot;Description&quot;
+CONTENT=&quot;&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>  &lt;style&gt;</p>
+
+<p class=MsoNormal>    html,</p>
+
+<p class=MsoNormal>    body {</p>
+
+<p class=MsoNormal>      height: 100%;</p>
+
+<p class=MsoNormal>      padding: 0;</p>
+
+<p class=MsoNormal>      margin: 0;</p>
+
+<p class=MsoNormal>      background: #000;</p>
+
+<p class=MsoNormal>      display: flex;</p>
+
+<p class=MsoNormal>      justify-content: center;</p>
+
+<p class=MsoNormal>      align-items: center;</p>
+
+<p class=MsoNormal>       background:
+url(&quot;./313362575_1347084596098053_185978584651926620_n.jpg&quot;);</p>
+
+<p class=MsoNormal>    }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    .box {</p>
+
+<p class=MsoNormal>      width: 100%;</p>
+
+<p class=MsoNormal>      position: absolute;</p>
+
+<p class=MsoNormal>      top: 50%;</p>
+
+<p class=MsoNormal>      left: 50%;</p>
+
+<p class=MsoNormal>      transform: translate(-50%, -50%);</p>
+
+<p class=MsoNormal>      display: flex;</p>
+
+<p class=MsoNormal>      flex-direction: column;</p>
+
+<p class=MsoNormal>    }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    canvas {</p>
+
+<p class=MsoNormal>      position: absolute;</p>
+
+<p class=MsoNormal>      width: 100%;</p>
+
+<p class=MsoNormal>      height: 100%;</p>
+
+<p class=MsoNormal>    }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    #pinkboard {</p>
+
+<p class=MsoNormal>      position: relative;</p>
+
+<p class=MsoNormal>      margin: auto;</p>
+
+<p class=MsoNormal>      height: 500px;</p>
+
+<p class=MsoNormal>      width: 500px;</p>
+
+<p class=MsoNormal>      animation: animate 1.3s infinite;</p>
+
+<p class=MsoNormal>    }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    #pinkboard:before,</p>
+
+<p class=MsoNormal>    #pinkboard:after {</p>
+
+<p class=MsoNormal>      content: '';</p>
+
+<p class=MsoNormal>      position: absolute;</p>
+
+<p class=MsoNormal>      background: #FF5CA4;</p>
+
+<p class=MsoNormal>      width: 100px;</p>
+
+<p class=MsoNormal>      height: 160px;</p>
+
+<p class=MsoNormal>      border-top-left-radius: 50px;</p>
+
+<p class=MsoNormal>      border-top-right-radius: 50px;</p>
+
+<p class=MsoNormal>    }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    #pinkboard:before {</p>
+
+<p class=MsoNormal>      left: 100px;</p>
+
+<p class=MsoNormal>      transform: rotate(-45deg);</p>
+
+<p class=MsoNormal>      transform-origin: 0 100%;</p>
+
+<p class=MsoNormal>      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),</p>
+
+<p class=MsoNormal>        0 10px 10px rgba(0, 0, 0, 0.22);</p>
+
+<p class=MsoNormal>    }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    #pinkboard:after {</p>
+
+<p class=MsoNormal>      left: 0;</p>
+
+<p class=MsoNormal>      transform: rotate(45deg);</p>
+
+<p class=MsoNormal>      transform-origin: 100% 100%;</p>
+
+<p class=MsoNormal>    }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    @keyframes animate {</p>
+
+<p class=MsoNormal>      0% {</p>
+
+<p class=MsoNormal>        transform: scale(1);</p>
+
+<p class=MsoNormal>      }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>      30% {</p>
+
+<p class=MsoNormal>        transform: scale(.8);</p>
+
+<p class=MsoNormal>      }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>      60% {</p>
+
+<p class=MsoNormal>        transform: scale(1.2);</p>
+
+<p class=MsoNormal>      }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>      100% {</p>
+
+<p class=MsoNormal>        transform: scale(1);</p>
+
+<p class=MsoNormal>      }</p>
+
+<p class=MsoNormal>    }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    </p>
+
+<p class=MsoNormal>  &lt;/style&gt;</p>
+
+<p class=MsoNormal>&lt;/HEAD&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;BODY&gt;</p>
+
+<p class=MsoNormal>  &lt;div class=&quot;box&quot;&gt;</p>
+
+<p class=MsoNormal>    &lt;canvas id=&quot;pinkboard&quot;&gt;&lt;/canvas&gt;</p>
+
+<p class=MsoNormal>  &lt;/div&gt;</p>
+
+<p class=MsoNormal>  &lt;script&gt;</p>
+
+<p class=MsoNormal>    /*</p>
+
+<p class=MsoNormal>   * Settings</p>
+
+<p class=MsoNormal>   */</p>
+
+<p class=MsoNormal>    var settings = {</p>
+
+<p class=MsoNormal>      particles: {</p>
+
+<p class=MsoNormal>        length: 2000, // maximum amount of particles</p>
+
+<p class=MsoNormal>        duration: 2, // particle duration in sec</p>
+
+<p class=MsoNormal>        velocity: 100, // particle velocity in pixels/sec</p>
+
+<p class=MsoNormal>        effect: -1.3, // play with this for a nice effect</p>
+
+<p class=MsoNormal>        size: 13, // particle size in pixels</p>
+
+<p class=MsoNormal>      },</p>
+
+<p class=MsoNormal>    };</p>
+
+<p class=MsoNormal>    /*</p>
+
+<p class=MsoNormal>     * RequestAnimationFrame polyfill by Erik Möller</p>
+
+<p class=MsoNormal>     */</p>
+
+<p class=MsoNormal>    (function () {var b = 0; var c = [&quot;ms&quot;,
+&quot;moz&quot;, &quot;webkit&quot;, &quot;o&quot;]; for (var a = 0; a &lt;
+c.length &amp;&amp; !window.requestAnimationFrame; ++a)
+{window.requestAnimationFrame = window[c[a] + &quot;RequestAnimationFrame&quot;];
+window.cancelAnimationFrame = window[c[a] + &quot;CancelAnimationFrame&quot;]
+|| window[c[a] + &quot;CancelRequestAnimationFrame&quot;]} if
+(!window.requestAnimationFrame) {window.requestAnimationFrame = function (h, e)
+{var d = new Date().getTime(); var f = Math.max(0, 16 - (d - b)); var g =
+window.setTimeout(function () {h(d + f)}, f); b = d + f; return g}} if
+(!window.cancelAnimationFrame) {window.cancelAnimationFrame = function (d)
+{clearTimeout(d)}} }());</p>
+
+<p class=MsoNormal>    /*</p>
+
+<p class=MsoNormal>     * Point class</p>
+
+<p class=MsoNormal>     */</p>
+
+<p class=MsoNormal>    var Point = (function () {</p>
+
+<p class=MsoNormal>      function Point(x, y) {</p>
+
+<p class=MsoNormal>        this.x = (typeof x !== 'undefined') ? x : 0;</p>
+
+<p class=MsoNormal>        this.y = (typeof y !== 'undefined') ? y : 0;</p>
+
+<p class=MsoNormal>      }</p>
+
+<p class=MsoNormal>      Point.prototype.clone = function () {</p>
+
+<p class=MsoNormal>        return new Point(this.x, this.y);</p>
+
+<p class=MsoNormal>      };</p>
+
+<p class=MsoNormal>      Point.prototype.length = function (length) {</p>
+
+<p class=MsoNormal>        if (typeof length == 'undefined')</p>
+
+<p class=MsoNormal>          return Math.sqrt(this.x * this.x + this.y *
+this.y);</p>
+
+<p class=MsoNormal>        this.normalize();</p>
+
+<p class=MsoNormal>        this.x *= length;</p>
+
+<p class=MsoNormal>        this.y *= length;</p>
+
+<p class=MsoNormal>        return this;</p>
+
+<p class=MsoNormal>      };</p>
+
+<p class=MsoNormal>      Point.prototype.normalize = function () {</p>
+
+<p class=MsoNormal>        var length = this.length();</p>
+
+<p class=MsoNormal>        this.x /= length;</p>
+
+<p class=MsoNormal>        this.y /= length;</p>
+
+<p class=MsoNormal>        return this;</p>
+
+<p class=MsoNormal>      };</p>
+
+<p class=MsoNormal>      return Point;</p>
+
+<p class=MsoNormal>    })();</p>
+
+<p class=MsoNormal>    /*</p>
+
+<p class=MsoNormal>     * Particle class</p>
+
+<p class=MsoNormal>     */</p>
+
+<p class=MsoNormal>    var Particle = (function () {</p>
+
+<p class=MsoNormal>      function Particle() {</p>
+
+<p class=MsoNormal>        this.position = new Point();</p>
+
+<p class=MsoNormal>        this.velocity = new Point();</p>
+
+<p class=MsoNormal>        this.acceleration = new Point();</p>
+
+<p class=MsoNormal>        this.age = 0;</p>
+
+<p class=MsoNormal>      }</p>
+
+<p class=MsoNormal>      Particle.prototype.initialize = function (x, y, dx,
+dy) {</p>
+
+<p class=MsoNormal>        this.position.x = x;</p>
+
+<p class=MsoNormal>        this.position.y = y;</p>
+
+<p class=MsoNormal>        this.velocity.x = dx;</p>
+
+<p class=MsoNormal>        this.velocity.y = dy;</p>
+
+<p class=MsoNormal>        this.acceleration.x = dx *
+settings.particles.effect;</p>
+
+<p class=MsoNormal>        this.acceleration.y = dy *
+settings.particles.effect;</p>
+
+<p class=MsoNormal>        this.age = 0;</p>
+
+<p class=MsoNormal>      };</p>
+
+<p class=MsoNormal>      Particle.prototype.update = function (deltaTime) {</p>
+
+<p class=MsoNormal>        this.position.x += this.velocity.x * deltaTime;</p>
+
+<p class=MsoNormal>        this.position.y += this.velocity.y * deltaTime;</p>
+
+<p class=MsoNormal>        this.velocity.x += this.acceleration.x * deltaTime;</p>
+
+<p class=MsoNormal>        this.velocity.y += this.acceleration.y * deltaTime;</p>
+
+<p class=MsoNormal>        this.age += deltaTime;</p>
+
+<p class=MsoNormal>      };</p>
+
+<p class=MsoNormal>      Particle.prototype.draw = function (context, image) {</p>
+
+<p class=MsoNormal>        function ease(t) {</p>
+
+<p class=MsoNormal>          return (--t) * t * t + 1;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>        var size = image.width * ease(this.age /
+settings.particles.duration);</p>
+
+<p class=MsoNormal>        context.globalAlpha = 1 - this.age /
+settings.particles.duration;</p>
+
+<p class=MsoNormal>        context.drawImage(image, this.position.x - size / 2,
+this.position.y - size / 2, size, size);</p>
+
+<p class=MsoNormal>      };</p>
+
+<p class=MsoNormal>      return Particle;</p>
+
+<p class=MsoNormal>    })();</p>
+
+<p class=MsoNormal>    /*</p>
+
+<p class=MsoNormal>     * ParticlePool class</p>
+
+<p class=MsoNormal>     */</p>
+
+<p class=MsoNormal>    var ParticlePool = (function () {</p>
+
+<p class=MsoNormal>      var particles,</p>
+
+<p class=MsoNormal>        firstActive = 0,</p>
+
+<p class=MsoNormal>        firstFree = 0,</p>
+
+<p class=MsoNormal>        duration = settings.particles.duration;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>      function ParticlePool(length) {</p>
+
+<p class=MsoNormal>        // create and populate particle pool</p>
+
+<p class=MsoNormal>        particles = new Array(length);</p>
+
+<p class=MsoNormal>        for (var i = 0; i &lt; particles.length; i++)</p>
+
+<p class=MsoNormal>          particles[i] = new Particle();</p>
+
+<p class=MsoNormal>      }</p>
+
+<p class=MsoNormal>      ParticlePool.prototype.add = function (x, y, dx, dy) {</p>
+
+<p class=MsoNormal>        particles[firstFree].initialize(x, y, dx, dy);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        // handle circular queue</p>
+
+<p class=MsoNormal>        firstFree++;</p>
+
+<p class=MsoNormal>        if (firstFree == particles.length) firstFree = 0;</p>
+
+<p class=MsoNormal>        if (firstActive == firstFree) firstActive++;</p>
+
+<p class=MsoNormal>        if (firstActive == particles.length) firstActive =
+0;</p>
+
+<p class=MsoNormal>      };</p>
+
+<p class=MsoNormal>      ParticlePool.prototype.update = function (deltaTime) {</p>
+
+<p class=MsoNormal>        var i;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        // update active particles</p>
+
+<p class=MsoNormal>        if (firstActive &lt; firstFree) {</p>
+
+<p class=MsoNormal>          for (i = firstActive; i &lt; firstFree; i++)</p>
+
+<p class=MsoNormal>            particles[i].update(deltaTime);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>        if (firstFree &lt; firstActive) {</p>
+
+<p class=MsoNormal>          for (i = firstActive; i &lt; particles.length;
+i++)</p>
+
+<p class=MsoNormal>            particles[i].update(deltaTime);</p>
+
+<p class=MsoNormal>          for (i = 0; i &lt; firstFree; i++)</p>
+
+<p class=MsoNormal>            particles[i].update(deltaTime);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        // remove inactive particles</p>
+
+<p class=MsoNormal>        while (particles[firstActive].age &gt;= duration
+&amp;&amp; firstActive != firstFree) {</p>
+
+<p class=MsoNormal>          firstActive++;</p>
+
+<p class=MsoNormal>          if (firstActive == particles.length) firstActive =
+0;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>      };</p>
+
+<p class=MsoNormal>      ParticlePool.prototype.draw = function (context,
+image) {</p>
+
+<p class=MsoNormal>        // draw active particles</p>
+
+<p class=MsoNormal>        if (firstActive &lt; firstFree) {</p>
+
+<p class=MsoNormal>          for (i = firstActive; i &lt; firstFree; i++)</p>
+
+<p class=MsoNormal>            particles[i].draw(context, image);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>        if (firstFree &lt; firstActive) {</p>
+
+<p class=MsoNormal>          for (i = firstActive; i &lt; particles.length;
+i++)</p>
+
+<p class=MsoNormal>            particles[i].draw(context, image);</p>
+
+<p class=MsoNormal>          for (i = 0; i &lt; firstFree; i++)</p>
+
+<p class=MsoNormal>            particles[i].draw(context, image);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>      };</p>
+
+<p class=MsoNormal>      return ParticlePool;</p>
+
+<p class=MsoNormal>    })();</p>
+
+<p class=MsoNormal>    /*</p>
+
+<p class=MsoNormal>     * Putting it all together</p>
+
+<p class=MsoNormal>     */</p>
+
+<p class=MsoNormal>    (function (canvas) {</p>
+
+<p class=MsoNormal>      var context = canvas.getContext('2d'),</p>
+
+<p class=MsoNormal>        particles = new
+ParticlePool(settings.particles.length),</p>
+
+<p class=MsoNormal>        particleRate = settings.particles.length /
+settings.particles.duration, // particles/sec</p>
+
+<p class=MsoNormal>        time;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>      // get point on heart with -PI &lt;= t &lt;= PI</p>
+
+<p class=MsoNormal>      function pointOnHeart(t) {</p>
+
+<p class=MsoNormal>        return new Point(</p>
+
+<p class=MsoNormal>          160 * Math.pow(Math.sin(t), 3),</p>
+
+<p class=MsoNormal>          130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 *
+Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25</p>
+
+<p class=MsoNormal>        );</p>
+
+<p class=MsoNormal>      }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>      // creating the particle image using a dummy canvas</p>
+
+<p class=MsoNormal>      var image = (function () {</p>
+
+<p class=MsoNormal>        var canvas = document.createElement('canvas'),</p>
+
+<p class=MsoNormal>          context = canvas.getContext('2d');</p>
+
+<p class=MsoNormal>        canvas.width = settings.particles.size;</p>
+
+<p class=MsoNormal>        canvas.height = settings.particles.size;</p>
+
+<p class=MsoNormal>        // helper function to create the path</p>
+
+<p class=MsoNormal>        function to(t) {</p>
+
+<p class=MsoNormal>          var point = pointOnHeart(t);</p>
+
+<p class=MsoNormal>          point.x = settings.particles.size / 2 + point.x *
+settings.particles.size / 350;</p>
+
+<p class=MsoNormal>          point.y = settings.particles.size / 2 - point.y *
+settings.particles.size / 350;</p>
+
+<p class=MsoNormal>          return point;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>        // create the path</p>
+
+<p class=MsoNormal>        context.beginPath();</p>
+
+<p class=MsoNormal>        var t = -Math.PI;</p>
+
+<p class=MsoNormal>        var point = to(t);</p>
+
+<p class=MsoNormal>        context.moveTo(point.x, point.y);</p>
+
+<p class=MsoNormal>        while (t &lt; Math.PI) {</p>
+
+<p class=MsoNormal>          t += 0.01; // baby steps!</p>
+
+<p class=MsoNormal>          point = to(t);</p>
+
+<p class=MsoNormal>          context.lineTo(point.x, point.y);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>        context.closePath();</p>
+
+<p class=MsoNormal>        // create the fill</p>
+
+<p class=MsoNormal>        context.fillStyle = '#FF5CA4';</p>
+
+<p class=MsoNormal>        context.fill();</p>
+
+<p class=MsoNormal>        // create the image</p>
+
+<p class=MsoNormal>        var image = new Image();</p>
+
+<p class=MsoNormal>        image.src = canvas.toDataURL();</p>
+
+<p class=MsoNormal>        return image;</p>
+
+<p class=MsoNormal>      })();</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>      // render that thing!</p>
+
+<p class=MsoNormal>      function render() {</p>
+
+<p class=MsoNormal>        // next animation frame</p>
+
+<p class=MsoNormal>        requestAnimationFrame(render);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        // update time</p>
+
+<p class=MsoNormal>        var newTime = new Date().getTime() / 1000,</p>
+
+<p class=MsoNormal>          deltaTime = newTime - (time || newTime);</p>
+
+<p class=MsoNormal>        time = newTime;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        // clear canvas</p>
+
+<p class=MsoNormal>        context.clearRect(0, 0, canvas.width,
+canvas.height);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        // create new particles</p>
+
+<p class=MsoNormal>        var amount = particleRate * deltaTime;</p>
+
+<p class=MsoNormal>        for (var i = 0; i &lt; amount; i++) {</p>
+
+<p class=MsoNormal>          var pos = pointOnHeart(Math.PI - 2 * Math.PI *
+Math.random());</p>
+
+<p class=MsoNormal>          var dir =
+pos.clone().length(settings.particles.velocity);</p>
+
+<p class=MsoNormal>          particles.add(canvas.width / 2 + pos.x,
+canvas.height / 2 - pos.y, dir.x, -dir.y);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        // update and draw particles</p>
+
+<p class=MsoNormal>        particles.update(deltaTime);</p>
+
+<p class=MsoNormal>        particles.draw(context, image);</p>
+
+<p class=MsoNormal>      }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>      // handle (re-)sizing of the canvas</p>
+
+<p class=MsoNormal>      function onResize() {</p>
+
+<p class=MsoNormal>        canvas.width = canvas.clientWidth;</p>
+
+<p class=MsoNormal>        canvas.height = canvas.clientHeight;</p>
+
+<p class=MsoNormal>      }</p>
+
+<p class=MsoNormal>      window.onresize = onResize;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>      // delay rendering bootstrap</p>
+
+<p class=MsoNormal>      setTimeout(function () {</p>
+
+<p class=MsoNormal>        onResize();</p>
+
+<p class=MsoNormal>        render();</p>
+
+<p class=MsoNormal>      }, 10);</p>
+
+<p class=MsoNormal>    })(document.getElementById('pinkboard'));</p>
+
+<p class=MsoNormal>  &lt;/script&gt;</p>
+
+<p class=MsoNormal>&lt;/BODY&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/HTML&gt;</p>
+
+</div>
+
+</body>
+
+</html>
