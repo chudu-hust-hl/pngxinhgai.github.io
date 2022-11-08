@@ -4,10 +4,7 @@
 
 <HEAD>
   <TITLE> Heart </TITLE>
-  <META NAME="Generator" CONTENT="EditPlus">
-  
-  <META NAME="Keywords" CONTENT="">
-  <META NAME="Description" CONTENT="">
+ 
 
 
   <style>
