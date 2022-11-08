@@ -10,7 +10,7 @@
   <style>
     html,
     body {
-      height: 100%;
+      height: 200%;
       padding: 0;
       margin: 0;
       background: #000;
@@ -21,7 +21,7 @@
     }
 
     .box {
-      width: 100%;
+      width: 200%;
       position: absolute;
       top: 50%;
       left: 50%;
