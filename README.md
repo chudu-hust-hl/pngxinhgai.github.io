@@ -11,12 +11,6 @@
 
   <style>
     html,
-    body {
-      height: 100%;
-      padding: 0;
-      margin: 0;
-       background: url("./310275345_654224526353904_7109379846238154958_n.jpg");
-    }
 
     .box {
       width: 100%;
