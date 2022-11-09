@@ -15,10 +15,7 @@
       height: 100%;
       padding: 0;
       margin: 0;
-      background: #00;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background: #000;
        background: url("./312487757_3375494922726204_7389189315421229055_n.jpg");
     }
 
