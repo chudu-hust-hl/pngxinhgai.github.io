@@ -15,7 +15,7 @@
       height: 100%;
       padding: 0;
       margin: 0;
-      background: #000;
+      background: #00;
       display: flex;
       justify-content: center;
       align-items: center;
